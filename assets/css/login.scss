@@ -1,5 +1,6 @@
 .sing-in {
-  background-color: $My-Color-Theme-3;
+  margin: 10rem auto;
+  background-color: $air-3-hex;
   border-radius: 5px;
   padding: 2.5rem;
 
@@ -25,7 +26,7 @@
         }
 
         i {
-          color: $My-Color-Theme-3;
+          color: $air-1-hex;
           font-size: 1.5rem;
 
           &.fa-eye {
@@ -42,7 +43,7 @@
       height: 100%;
 
       &::placeholder {
-        color: $My-Color-Theme-1;
+        color: $air-1-hex;
       }
 
       &:focus {
@@ -60,8 +61,25 @@
     }
     .form-check-label{
       margin-left: 1rem;
-      font-size: 1rem;
+      font-size: 1.2rem;
       color: #fff;
+    }
+    .form-check-link{
+      color: $air-1-hex;
+      text-decoration: underline;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+  }
+  .login-btn{
+    width: 100%;
+    background-color: #fff;
+    height: 2.75rem;
+    color: $air-1-hex;
+    font-weight: bold;
+    font-size: 1.3rem;
+    &.btn:focus{
+      box-shadow: none;
     }
   }
 }
