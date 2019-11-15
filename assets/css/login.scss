@@ -8,27 +8,60 @@
   }
 
   .input-group {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
     height: 2.75rem;
 
     .input-group-prepend, .input-group-append {
+      background-color: transparent;
+
       .input-group-text {
         background-color: #fff;
-        height: 100%;
-        border: none;
-        border-radius: 0;
+        border-color: #fff;
+
+        &.btn:focus {
+          box-shadow: none;
+        }
 
         i {
           color: $My-Color-Theme-3;
-          font-size: 1.1rem;
+          font-size: 1.5rem;
+
+          &.fa-eye {
+            color: #c3c3c3;
+            font-size: 1rem;
+          }
         }
       }
     }
 
     .form-control {
+      background-color: transparent;
+      border-color: #fff;
       height: 100%;
-      border: none;
-      border-radius: 0;
+
+      &::placeholder {
+        color: $My-Color-Theme-1;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .form-check {
+    margin-bottom: 2rem;
+    .form-check-input {
+      height: 1.4rem;
+      width: 1.4rem;
+      margin-top: 0;
+    }
+    .form-check-label{
+      margin-left: 1rem;
+      font-size: 1rem;
+      color: #fff;
     }
   }
 }

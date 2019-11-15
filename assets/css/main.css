@@ -8,23 +8,56 @@
   margin-bottom: 2.5rem;
 }
 .sing-in .input-group {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 5px;
   height: 2.75rem;
+}
+.sing-in .input-group .input-group-prepend, .sing-in .input-group .input-group-append {
+  background-color: transparent;
 }
 .sing-in .input-group .input-group-prepend .input-group-text, .sing-in .input-group .input-group-append .input-group-text {
   background-color: #fff;
-  height: 100%;
-  border: none;
-  border-radius: 0;
+  border-color: #fff;
+}
+.sing-in .input-group .input-group-prepend .input-group-text.btn:focus, .sing-in .input-group .input-group-append .input-group-text.btn:focus {
+  box-shadow: none;
 }
 .sing-in .input-group .input-group-prepend .input-group-text i, .sing-in .input-group .input-group-append .input-group-text i {
   color: #17A6E8;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+}
+.sing-in .input-group .input-group-prepend .input-group-text i.fa-eye, .sing-in .input-group .input-group-append .input-group-text i.fa-eye {
+  color: #c3c3c3;
+  font-size: 1rem;
 }
 .sing-in .input-group .form-control {
+  background-color: transparent;
+  border-color: #fff;
   height: 100%;
-  border: none;
-  border-radius: 0;
+}
+.sing-in .input-group .form-control::placeholder {
+  color: #0A4B69;
+}
+.sing-in .input-group .form-control:focus {
+  box-shadow: none;
+}
+.sing-in .form-check {
+  margin-bottom: 2rem;
+}
+.sing-in .form-check .form-check-input {
+  height: 1.4rem;
+  width: 1.4rem;
+  margin-top: 0;
+}
+.sing-in .form-check .form-check-label {
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

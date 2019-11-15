@@ -5,6 +5,10 @@ $My-Color-Theme-3: #17A6E8;
 $My-Color-Theme-4: #2A5569;
 $My-Color-Theme-5: #1281B5;
 
-
+$main-font: 'Open Sans', sans-serif;
 
 @import "login";
+
+body{
+  font-family: $main-font;
+}
