@@ -1,0 +1,30 @@
+/* Color Theme Swatches */
+.sing-in {
+  background-color: #17A6E8;
+  border-radius: 5px;
+  padding: 2.5rem;
+}
+.sing-in .logo {
+  margin-bottom: 2.5rem;
+}
+.sing-in .input-group {
+  margin-bottom: 2.5rem;
+  height: 2.75rem;
+}
+.sing-in .input-group .input-group-prepend .input-group-text, .sing-in .input-group .input-group-append .input-group-text {
+  background-color: #fff;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+}
+.sing-in .input-group .input-group-prepend .input-group-text i, .sing-in .input-group .input-group-append .input-group-text i {
+  color: #17A6E8;
+  font-size: 1.1rem;
+}
+.sing-in .input-group .form-control {
+  height: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
