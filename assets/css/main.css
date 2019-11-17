@@ -28,7 +28,7 @@
   color: #0A4B69;
   font-size: 1.5rem;
 }
-.sing-in .input-group .input-group-prepend .input-group-text i.fa-eye, .sing-in .input-group .input-group-append .input-group-text i.fa-eye {
+.sing-in .input-group .input-group-prepend .input-group-text i.fa-eye, .sing-in .input-group .input-group-prepend .input-group-text i.fa-eye-slash, .sing-in .input-group .input-group-append .input-group-text i.fa-eye, .sing-in .input-group .input-group-append .input-group-text i.fa-eye-slash {
   color: #c3c3c3;
   font-size: 1rem;
 }
