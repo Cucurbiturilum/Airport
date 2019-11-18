@@ -8,7 +8,7 @@ $air-5-hex: #5EA4C4;
 
 $main-font: 'Open Sans', sans-serif;
 
-@import "login";
+@import "login" , 'mainscreen';
 
 body{
   font-family: $main-font;

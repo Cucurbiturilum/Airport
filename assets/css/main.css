@@ -75,6 +75,133 @@
 }
 
 body {
+  padding: 3rem 5rem;
+}
+body .btn.focus, body .btn:focus {
+  box-shadow: none;
+}
+body header .menu .menu-link .fa-bars {
+  color: #77CFF7;
+  font-size: 2rem;
+}
+body header .menu .dropdown-menu {
+  border-color: #77CFF7;
+}
+body header .menu .dropdown-menu .dropdown-item.active, body header .menu .dropdown-menu .dropdown-item:active {
+  background-color: #C2E7F9;
+}
+body section {
+  margin-top: 1.25rem;
+}
+body section .title {
+  color: #0A4B69;
+  font-weight: bold;
+  font-size: 2rem;
+}
+body section .plane-icon {
+  width: 12%;
+  background-color: #77CFF7;
+  margin-bottom: -1px;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+body section .plane-icon .input-group-text {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+}
+body section .plane-icon .input-group-text .fa-plane {
+  color: white;
+  font-size: 1.5rem;
+}
+body section .plane-icon .input-group-text .fa-plane.arrival {
+  transform: rotate(-45deg);
+}
+body section .plane-icon .input-group-text .fa-plane.departure {
+  transform: rotate(135deg);
+}
+body section .plane-icon .plane-arrival {
+  width: 100%;
+}
+body section form label {
+  color: #0A4B69;
+}
+body section form .form-group {
+  margin-bottom: 1.25rem;
+}
+body section form .form-group .form-control {
+  height: 3rem;
+  font-size: 1.2rem;
+  border-color: #77CFF7;
+}
+body section form .form-group .form-control:focus {
+  box-shadow: none;
+}
+body section form .form-group .form-control::placeholder {
+  color: #0A4B69;
+}
+body section form .form-group .estimated-arrival, body section form .form-group .estimated-departure {
+  border-radius: 0.25rem;
+  border: 1px solid #77CFF7;
+}
+body section form .form-group .estimated-arrival #arrival-date, body section form .form-group .estimated-arrival #departure-date, body section form .form-group .estimated-departure #arrival-date, body section form .form-group .estimated-departure #departure-date {
+  background-color: transparent;
+  width: 50%;
+  border: none;
+}
+body section form .form-group .estimated-arrival #arrival-time, body section form .form-group .estimated-arrival #departure-time, body section form .form-group .estimated-departure #arrival-time, body section form .form-group .estimated-departure #departure-time {
+  background-color: transparent;
+  width: 30%;
+  border: none;
+}
+body section form .add-requests {
+  border: 0.09rem solid #0A4B69;
+  color: #0A4B69;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+body section form .add-requests:hover {
+  background-color: #0A4B69;
+  color: #FFF;
+}
+body section .submit {
+  background-color: #77CFF7;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body section .add-new, body section .search-by {
+  padding: 1.25rem;
+  border: 0.095rem solid #0A4B69;
+  border-radius: 0.3rem;
+}
+body section .search-by {
+  max-height: 340px;
+}
+body section .search-by .submit {
+  width: 60%;
+}
+body section .calendar .card {
+  border: 1px solid #77CFF7;
+  font-size: 1.3rem;
+}
+body section .calendar .card .card-header {
+  background-color: #77CFF7;
+}
+body section .calendar .card .card-header h5 {
+  color: #0A4B69;
+  font-weight: bold;
+}
+body section .calendar .card .card-body {
+  font-weight: bold;
+}
+
+body {
   font-family: "Open Sans", sans-serif;
 }
 

@@ -1,0 +1,155 @@
+body {
+  padding: 3rem 5rem;
+  .btn.focus, .btn:focus{
+    box-shadow: none;
+  }
+  header {
+    .menu {
+      .menu-link {
+        .fa-bars {
+          color: $air-3-hex;
+          font-size: 2rem;
+        }
+      }
+
+      .dropdown-menu {
+        border-color: $air-3-hex;
+
+        .dropdown-item.active, .dropdown-item:active {
+          background-color: $air-2-hex;
+        }
+      }
+    }
+  }
+
+  section {
+    margin-top: 1.25rem;
+    .title{
+      color: $air-1-hex;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .plane-icon {
+      width: 12%;
+      background-color: $air-3-hex;
+      margin-bottom: -1px;
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+
+      .input-group-text {
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        padding: 0;
+        justify-content: center;
+        width: 100%;
+
+        .fa-plane {
+          color: white;
+          font-size: 1.5rem;
+
+          &.arrival {
+            transform: rotate(-45deg);
+          }
+
+          &.departure {
+            transform: rotate(135deg);
+          }
+        }
+      }
+
+      .plane-arrival {
+        width: 100%;
+      }
+    }
+    form {
+      label {
+        color: $air-1-hex;
+      }
+
+      .form-group {
+        margin-bottom: 1.25rem;
+
+        .form-control {
+          height: 3rem;
+          font-size: 1.2rem;
+          border-color: $air-3-hex;
+
+          &:focus {
+            box-shadow: none;
+          }
+
+          &::placeholder {
+            color: $air-1-hex;
+          }
+        }
+
+        .estimated-arrival, .estimated-departure {
+          border-radius: 0.25rem;
+          border: 1px solid $air-3-hex;
+
+          #arrival-date,  #departure-date {
+            background-color: transparent;
+            width: 50%;
+            border: none;
+          }
+          #arrival-time, #departure-time{
+            background-color: transparent;
+            width: 30%;
+            border: none;
+          }
+        }
+      }
+
+      .add-requests {
+        border: 0.09rem solid $air-1-hex;
+        color: $air-1-hex;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 1.25rem;
+        &:hover{
+          background-color: $air-1-hex;
+          color: #FFF;
+        }
+      }
+    }
+    .submit{
+      background-color: $air-3-hex;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .add-new, .search-by {
+      padding: 1.25rem;
+      border: 0.095rem solid $air-1-hex;
+      border-radius: 0.3rem;
+    }
+    .search-by{
+      max-height: 340px;
+      .submit{
+        width: 60%;
+      }
+    }
+    .calendar{
+      .card{
+        border: 1px solid $air-3-hex;
+        font-size: 1.3rem;
+        .card-header{
+          background-color: $air-3-hex;
+          h5{
+            color: $air-1-hex;
+            font-weight: bold;
+          }
+        }
+        .card-body{
+          font-weight: bold;
+        }
+
+      }
+    }
+  }
+}
+
+
+
