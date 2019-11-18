@@ -21,7 +21,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-
+    <script src="assets/js/mainscreen.js"></script>
 </head>
 <body>
 <header>
@@ -41,7 +41,7 @@
     <div class="row">
         <div class="add-new col-4">
             <h2 class="title">Add New</h2>
-            <form action="...">
+            <form>
                 <div class="form-group">
                     <label for="tail-number">Tail Number</label>
                     <input type="text" class="form-control" id="tail-number" placeholder="Tail Number">
@@ -67,65 +67,253 @@
                     </div>
                 </div>
                 <!--Modal Add Services Requests-->
-                <button type="button" class="add-requests btn w-100" data-toggle="modal" data-target=".bd-example-modal-lg">Add
-                    Services Requests
+                <button type="button" class="add-requests btn w-100" data-toggle="modal" data-target=".bd-modal-lg">
+                    Add Services Requests
                 </button>
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                <div class="modal fade bd-modal-lg" tabindex="-1" role="dialog"
                      aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
-                            <div class="accordion" id="accordionExample">
+                            <div class="accordion" id="accordionModal">
                                 <div class="card">
                                     <div class="card-header" id="headingOne">
-                                        <h2 class="mb-0">
-                                            <button class="btn" type="button" data-toggle="collapse"
+                                        <h3 class="mb-0">
+                                            <button class="btn p-0" type="button" data-toggle="collapse"
                                                     data-target="#collapseOne" aria-expanded="true"
                                                     aria-controls="collapseOne">
                                                 Arrival
                                             </button>
-                                        </h2>
+                                        </h3>
                                     </div>
                                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                         data-parent="#accordionExample">
+                                         data-parent="#accordionModal">
                                         <div class="card-header">
-                                            <h3>
-                                                Arrival Serveces Requests
-                                            </h3>
+                                            <h5>
+                                                Arrival Services Requests
+                                            </h5>
                                         </div>
                                         <div class="card-body">
-                                            <div class="request">
-                                                <form method="post">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="New Request">
+                                            <form method="post">
+                                                <div class="requests">
+                                                    <div class="form-group d-flex align-items-start">
+                                                        <div class="flex-grow-1">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="New Request" readonly>
+                                                            <div class="d-flex justify-content-between align-items-end mt-2">
+                                                                <div>Abraham Lincoln</div>
+                                                                <div>05.11.209</div>
+                                                                <div>15:52</div>
+                                                                <button type="button" class="btn btn-danger btn-sm">
+                                                                    High
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="fas fa-pen-square"></i>
+                                                        </button>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="fas fa-times-circle"></i>
+                                                        </button>
                                                     </div>
-                                                    <button type="submit" class="btn d-block ml-auto">Save</button>
-                                                </form>
-                                            </div>
+                                                    <div class="form-group d-flex align-items-start">
+                                                        <div class="flex-grow-1">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="New Request" readonly>
+                                                            <div class="d-flex justify-content-between align-items-end mt-2">
+                                                                <div>Mark Twain</div>
+                                                                <div>06.11.209</div>
+                                                                <div>18:52</div>
+                                                                <button type="button" class="btn btn-warning btn-sm">
+                                                                    Medium
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="fas fa-pen-square"></i>
+                                                        </button>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="fas fa-times-circle"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form-group d-flex align-items-start">
+                                                        <div class="flex-grow-1">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="New Request" readonly>
+                                                            <div class="d-flex justify-content-between align-items-end mt-2">
+                                                                <div>Humphrey Bogart</div>
+                                                                <div>24.11.209</div>
+                                                                <div>10:02</div>
+                                                                <button type="button" class="btn btn-secondary btn-sm">
+                                                                    Low
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="fas fa-pen-square"></i>
+                                                        </button>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="fas fa-times-circle"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form-group d-flex align-items-start">
+                                                        <div class="flex-grow-1">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="New Request">
+                                                            <div class="d-flex justify-content-between mt-2">
+                                                                <select name="name" class="employee-name">
+                                                                    <option>George Washington</option>
+                                                                    <option>Abraham Lincoln</option>
+                                                                    <option>Mark Twain</option>
+                                                                    <option>Henry Ford</option>
+                                                                    <option>Humphrey Bogart</option>
+                                                                </select>
+                                                                <div class="d-flex request-date">
+                                                                    <input type="date" class="form-control-date">
+                                                                    <input type="time" class="form-control-date">
+                                                                </div>
+                                                                <select name="priority" class="priority">
+                                                                    <option value="0">Priority</option>
+                                                                    <option value="1" class="text-danger">High</option>
+                                                                    <option value="2" class="text-warning">Medium
+                                                                    </option>
+                                                                    <option value="3" class="text-secondary">Low
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="far fa-check-circle"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form-group text-right"><i
+                                                            class="fas fa-plus-circle"></i></div>
+                                                </div>
+                                                <button type="submit"
+                                                        class="btn submit text-capitalize d-block ml-auto w-25">
+                                                    Save
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header" id="headingTwo">
-                                        <h2 class="mb-0">
-                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                                    data-target="#collapseTwo" aria-expanded="false"
+                                        <h3 class="mb-0">
+                                            <button class="btn p-0" type="button" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="true"
                                                     aria-controls="collapseTwo">
-                                                Collapsible Group Item #2
+                                                Departure
                                             </button>
-                                        </h2>
+                                        </h3>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                         data-parent="#accordionExample">
+                                         data-parent="#accordionModal">
+                                        <div class="card-header">
+                                            <h5>
+                                                Departure Services Requests
+                                            </h5>
+                                        </div>
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                            tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                                            assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                                            wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                            synth nesciunt you probably haven't heard of them accusamus labore
-                                            sustainable VHS.
+                                            <form method="post">
+                                                <div class="requests">
+                                                    <div class="form-group d-flex align-items-start">
+                                                        <div class="flex-grow-1">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="New Request" readonly>
+                                                            <div class="d-flex justify-content-between align-items-end mt-2">
+                                                                <div>Abraham Lincoln</div>
+                                                                <div>05.11.209</div>
+                                                                <div>15:52</div>
+                                                                <button type="button" class="btn btn-danger btn-sm">
+                                                                    High
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="fas fa-pen-square"></i>
+                                                        </button>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="fas fa-times-circle"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form-group d-flex align-items-start">
+                                                        <div class="flex-grow-1">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="New Request" readonly>
+                                                            <div class="d-flex justify-content-between align-items-end mt-2">
+                                                                <div>Mark Twain</div>
+                                                                <div>06.11.209</div>
+                                                                <div>18:52</div>
+                                                                <button type="button" class="btn btn-warning btn-sm">
+                                                                    Medium
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="fas fa-pen-square"></i>
+                                                        </button>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="fas fa-times-circle"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form-group d-flex align-items-start">
+                                                        <div class="flex-grow-1">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="New Request" readonly>
+                                                            <div class="d-flex justify-content-between align-items-end mt-2">
+                                                                <div>Humphrey Bogart</div>
+                                                                <div>24.11.209</div>
+                                                                <div>10:02</div>
+                                                                <button type="button" class="btn btn-secondary btn-sm">
+                                                                    Low
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="fas fa-pen-square"></i>
+                                                        </button>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="fas fa-times-circle"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form-group d-flex align-items-start">
+                                                        <div class="flex-grow-1">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="New Request">
+                                                            <div class="d-flex justify-content-between mt-2">
+                                                                <select name="name" class="employee-name">
+                                                                    <option>George Washington</option>
+                                                                    <option>Abraham Lincoln</option>
+                                                                    <option>Mark Twain</option>
+                                                                    <option>Henry Ford</option>
+                                                                    <option>Humphrey Bogart</option>
+                                                                </select>
+                                                                <div class="d-flex request-date">
+                                                                    <input type="date" class="form-control-date">
+                                                                    <input type="time" class="form-control-date">
+                                                                </div>
+                                                                <select name="priority" class="priority">
+                                                                    <option value="0">Priority</option>
+                                                                    <option value="1" class="text-danger">High</option>
+                                                                    <option value="2" class="text-warning">Medium
+                                                                    </option>
+                                                                    <option value="3" class="text-secondary">Low
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                                            <i class="far fa-check-circle"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="form-group text-right"><i
+                                                            class="fas fa-plus-circle"></i></div>
+                                                </div>
+                                                <button type="submit"
+                                                        class="btn submit text-capitalize d-block ml-auto w-25">
+                                                    Save
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -148,7 +336,7 @@
                         <label for="date">Date</label>
                         <input type="date" class="form-control" id="date" placeholder="Date">
                     </div>
-                    <button type="reset" class="add-requests btn d-inline-block float-right" data-toggle="modal" data-target=".bd-example-modal-lg">
+                    <button type="reset" class="add-requests btn d-inline-block float-right">
                         Reset
                     </button>
                     <button type="submit" class="submit btn d-inline-block">Search</button>
@@ -179,7 +367,10 @@
                     <h5>TIME</h5>
                 </div>
                 <div class="card-body text-center">
-
+                    <div class="card-body" id="date-time">
+                        <div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,8 +1,10 @@
 body {
   padding: 3rem 5rem;
-  .btn.focus, .btn:focus{
+
+  .btn.focus, .btn:focus {
     box-shadow: none;
   }
+
   header {
     .menu {
       .menu-link {
@@ -24,11 +26,14 @@ body {
 
   section {
     margin-top: 1.25rem;
-    .title{
+
+
+    .title {
       color: $air-1-hex;
       font-weight: bold;
       font-size: 2rem;
     }
+
     .plane-icon {
       width: 12%;
       background-color: $air-3-hex;
@@ -62,6 +67,7 @@ body {
         width: 100%;
       }
     }
+
     form {
       label {
         color: $air-1-hex;
@@ -88,12 +94,13 @@ body {
           border-radius: 0.25rem;
           border: 1px solid $air-3-hex;
 
-          #arrival-date,  #departure-date {
+          #arrival-date, #departure-date {
             background-color: transparent;
             width: 50%;
             border: none;
           }
-          #arrival-time, #departure-time{
+
+          #arrival-time, #departure-time {
             background-color: transparent;
             width: 30%;
             border: none;
@@ -107,42 +114,157 @@ body {
         font-size: 1.2rem;
         font-weight: bold;
         margin-bottom: 1.25rem;
-        &:hover{
+
+        &:hover {
           background-color: $air-1-hex;
           color: #FFF;
         }
       }
     }
-    .submit{
+
+    .submit {
       background-color: $air-3-hex;
       color: #fff;
       font-size: 1.2rem;
       font-weight: bold;
       text-transform: uppercase;
     }
+
+    .text-secondary {
+      color: yellow !important;
+    }
+
     .add-new, .search-by {
       padding: 1.25rem;
       border: 0.095rem solid $air-1-hex;
       border-radius: 0.3rem;
+
+      .modal {
+        .modal-content {
+          .accordion {
+            .card {
+              .card-header {
+                background-color: transparent;
+
+                h3 {
+                  .btn {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: $air-1-hex;
+                  }
+                }
+              }
+
+              .collapse {
+                .card-header {
+                  border: none;
+
+                  h5 {
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    color: $air-1-hex;
+                  }
+                }
+
+                .card-body {
+                  i {
+                    font-size: 1.9rem;
+
+                    &.fa-pen-square {
+                      color: #fff300;
+                    }
+
+                    &.fa-times-circle {
+                      color: red;
+                    }
+
+                    &.fa-check-circle {
+                      color: #00a409;
+                    }
+                    &.fa-plus-circle{
+                      color: $air-1-hex;
+                      &:hover{
+                        transform: scale(1.2);
+                      }
+                    }
+
+                  }
+
+                  .requests {
+                    .form-control {
+                      height: 2.5rem;
+                      border-color: $air-1-hex;
+                    }
+
+                    .employee-name, .priority {
+                      border: none;
+                      height: 1.5rem;
+                    }
+
+                    .request-date {
+                      height: 1.5rem;
+
+                      .form-control-date {
+                        border: none;
+                      }
+                    }
+
+                    .priority {
+                      option {
+                        font-weight: bold;
+                      }
+                    }
+
+                    .btn-secondary {
+                      background-color: #e4e400 !important;
+                      border-color: #e4e400;
+                    }
+
+                    .btn-danger, .btn-warning, .btn-secondary {
+                      color: white;
+                      width: 5rem;
+
+                      &.btn-sm {
+                        line-height: 1.2rem;
+                        font-size: 1rem;
+                      }
+
+                      &:focus {
+                        box-shadow: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
-    .search-by{
+
+    .search-by {
       max-height: 340px;
-      .submit{
+
+      .submit {
         width: 60%;
       }
     }
-    .calendar{
-      .card{
+
+    .calendar {
+      .card {
         border: 1px solid $air-3-hex;
         font-size: 1.3rem;
-        .card-header{
+
+        .card-header {
           background-color: $air-3-hex;
-          h5{
+
+          h5 {
             color: $air-1-hex;
             font-weight: bold;
           }
         }
-        .card-body{
+
+        .card-body {
           font-weight: bold;
         }
 
