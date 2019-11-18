@@ -92,11 +92,22 @@ body header .menu .dropdown-menu .dropdown-item.active, body header .menu .dropd
 }
 body section {
   margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
 }
 body section .title {
   color: #0A4B69;
   font-weight: bold;
   font-size: 2rem;
+}
+body section .fa-plane {
+  color: white;
+  font-size: 1.5rem;
+}
+body section .fa-plane.arrival {
+  transform: rotate(-45deg);
+}
+body section .fa-plane.departure {
+  transform: rotate(135deg);
 }
 body section .plane-icon {
   width: 12%;
@@ -112,16 +123,6 @@ body section .plane-icon .input-group-text {
   padding: 0;
   justify-content: center;
   width: 100%;
-}
-body section .plane-icon .input-group-text .fa-plane {
-  color: white;
-  font-size: 1.5rem;
-}
-body section .plane-icon .input-group-text .fa-plane.arrival {
-  transform: rotate(-45deg);
-}
-body section .plane-icon .input-group-text .fa-plane.departure {
-  transform: rotate(135deg);
 }
 body section .plane-icon .plane-arrival {
   width: 100%;
@@ -177,6 +178,21 @@ body section .submit {
 }
 body section .text-secondary {
   color: yellow !important;
+}
+body section .btn-secondary {
+  background-color: #e4e400 !important;
+  border-color: #e4e400;
+}
+body section .btn-danger, body section .btn-warning, body section .btn-secondary {
+  color: white;
+  width: 5rem;
+}
+body section .btn-danger.btn-sm, body section .btn-warning.btn-sm, body section .btn-secondary.btn-sm {
+  line-height: 1.2rem;
+  font-size: 1rem;
+}
+body section .btn-danger:focus, body section .btn-warning:focus, body section .btn-secondary:focus {
+  box-shadow: none;
 }
 body section .add-new, body section .search-by {
   padding: 1.25rem;
@@ -234,21 +250,6 @@ body section .add-new .modal .modal-content .accordion .card .collapse .card-bod
 body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .priority option, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .priority option {
   font-weight: bold;
 }
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .btn-secondary, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .btn-secondary {
-  background-color: #e4e400 !important;
-  border-color: #e4e400;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .btn-danger, body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .btn-warning, body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .btn-secondary, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .btn-danger, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .btn-warning, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .btn-secondary {
-  color: white;
-  width: 5rem;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .btn-danger.btn-sm, body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .btn-warning.btn-sm, body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .btn-secondary.btn-sm, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .btn-danger.btn-sm, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .btn-warning.btn-sm, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .btn-secondary.btn-sm {
-  line-height: 1.2rem;
-  font-size: 1rem;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .btn-danger:focus, body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .btn-warning:focus, body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .btn-secondary:focus, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .btn-danger:focus, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .btn-warning:focus, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .btn-secondary:focus {
-  box-shadow: none;
-}
 body section .search-by {
   max-height: 340px;
 }
@@ -268,6 +269,58 @@ body section .calendar .card .card-header h5 {
 }
 body section .calendar .card .card-body {
   font-weight: bold;
+}
+body .main-table .table {
+  font-size: 0.9rem;
+  border: 1px solid #77CFF7;
+}
+body .main-table .table .aircraftstatus-table, body .main-table .table .estimatedtime-table, body .main-table .table .actualtime-table {
+  width: 3%;
+}
+body .main-table .table .priority-table, body .main-table .table .actions-table {
+  width: 5%;
+}
+body .main-table .table .tailnumber-table, body .main-table .table .chauffeurstatus-table, body .main-table .table .status-table {
+  width: 9%;
+}
+body .main-table .table .servicerequest-table, body .main-table .table .requestassigned-table {
+  width: 15%;
+}
+body .main-table .table thead {
+  background-color: #77CFF7;
+  color: #fff;
+}
+body .main-table .table thead th {
+  padding: 0.4rem;
+  vertical-align: middle;
+}
+body .main-table .table tbody td {
+  padding: 0.4rem;
+  vertical-align: middle;
+  border-color: #77CFF7;
+}
+body .main-table .table tbody td.actions-table i {
+  font-size: 1.5rem;
+}
+body .main-table .table tbody td.actions-table i.fa-pen-square {
+  color: #00a409;
+}
+body .main-table .table tbody td.actions-table i.fa-trash-alt {
+  color: red;
+}
+body .main-table .table tbody .btn-light, body .main-table .table tbody .btn-primary, body .main-table .table tbody .btn-success {
+  width: 100%;
+  padding: 0.3rem;
+}
+body .main-table .table tbody .btn-light.btn:focus, body .main-table .table tbody .btn-primary.btn:focus, body .main-table .table tbody .btn-success.btn:focus {
+  box-shadow: none;
+}
+body .main-table .table tbody .btn-light {
+  background-color: grey !important;
+  color: #fff;
+}
+body .main-table .table tbody .fa-plane {
+  color: #77CFF7;
 }
 
 body {
