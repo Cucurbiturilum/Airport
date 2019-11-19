@@ -1,0 +1,70 @@
+
+body{
+  .search {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+
+    .input-group {
+      border: 0.09rem solid $air-3-hex;
+      border-radius: 0.25rem;
+
+      .form-control {
+        border: none;
+
+        &::placeholder {
+          color: $air-1-hex;
+          font-size: 1.1rem;
+          line-height: 1.5;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+
+      .input-group-append {
+        width: 10%;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+
+        .fa-search {
+          color: $air-3-hex;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .btn-secondary {
+    background-color: #e4e400 !important;
+    border-color: #e4e400;
+  }
+
+  .btn-danger, .btn-warning, .btn-secondary {
+    color: white;
+    width: 5rem;
+
+    &.btn-sm {
+      line-height: 1.2rem;
+      font-size: 1rem;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .search-results {
+    .table {
+      .priority-table {
+        width: 10%!important;
+      }
+      .servicerequest-table{
+        width: 20%!important;
+      }
+    }
+  }
+}

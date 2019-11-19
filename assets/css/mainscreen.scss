@@ -6,6 +6,7 @@ body {
   }
 
   header {
+    margin-bottom: 2rem;
     .menu {
       .menu-link {
         .fa-bars {
@@ -23,29 +24,108 @@ body {
       }
     }
   }
+  .modal {
+    .modal-content {
+      .accordion {
+        .card {
+          .card-header {
+            background-color: transparent;
 
+            h3 {
+              .btn {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: $air-1-hex;
+              }
+            }
+          }
+
+          .collapse {
+            .card-header {
+              border: none;
+
+              h5 {
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: $air-1-hex;
+              }
+            }
+
+            .card-body {
+              i {
+                font-size: 1.9rem;
+
+                &.fa-pen-square {
+                  color: #fff300;
+                }
+
+                &.fa-times-circle {
+                  color: red;
+                }
+
+                &.fa-check-circle {
+                  color: #00a409;
+                }
+
+                &.fa-plus-circle {
+                  color: $air-1-hex;
+
+                  &:hover {
+                    transform: scale(1.2);
+                  }
+                }
+
+              }
+
+              .requests {
+                .form-control {
+                  height: 2.5rem;
+                  border-color: $air-1-hex;
+                }
+
+                .employee-name, .priority {
+                  border: none;
+                  height: 1.5rem;
+                }
+
+                .request-date {
+                  height: 1.5rem;
+
+                  .form-control-date {
+                    border: none;
+                  }
+                }
+
+                .priority {
+                  option {
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .submit {
+    background-color: $air-3-hex;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .title {
+    color: $air-1-hex;
+    font-weight: bold;
+    font-size: 2rem;
+  }
   section {
     margin-top: 1.25rem;
     margin-bottom: 2.5rem;
 
-    .title {
-      color: $air-1-hex;
-      font-weight: bold;
-      font-size: 2rem;
-    }
 
-    .fa-plane {
-      color: white;
-      font-size: 1.5rem;
 
-      &.arrival {
-        transform: rotate(-45deg);
-      }
-
-      &.departure {
-        transform: rotate(135deg);
-      }
-    }
 
     .plane-icon {
       width: 12%;
@@ -123,14 +203,6 @@ body {
       }
     }
 
-    .submit {
-      background-color: $air-3-hex;
-      color: #fff;
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
     .text-secondary {
       color: yellow !important;
     }
@@ -159,90 +231,6 @@ body {
       border: 0.095rem solid $air-1-hex;
       border-radius: 0.3rem;
 
-      .modal {
-        .modal-content {
-          .accordion {
-            .card {
-              .card-header {
-                background-color: transparent;
-
-                h3 {
-                  .btn {
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                    color: $air-1-hex;
-                  }
-                }
-              }
-
-              .collapse {
-                .card-header {
-                  border: none;
-
-                  h5 {
-                    font-size: 1.1rem;
-                    font-weight: bold;
-                    color: $air-1-hex;
-                  }
-                }
-
-                .card-body {
-                  i {
-                    font-size: 1.9rem;
-
-                    &.fa-pen-square {
-                      color: #fff300;
-                    }
-
-                    &.fa-times-circle {
-                      color: red;
-                    }
-
-                    &.fa-check-circle {
-                      color: #00a409;
-                    }
-
-                    &.fa-plus-circle {
-                      color: $air-1-hex;
-
-                      &:hover {
-                        transform: scale(1.2);
-                      }
-                    }
-
-                  }
-
-                  .requests {
-                    .form-control {
-                      height: 2.5rem;
-                      border-color: $air-1-hex;
-                    }
-
-                    .employee-name, .priority {
-                      border: none;
-                      height: 1.5rem;
-                    }
-
-                    .request-date {
-                      height: 1.5rem;
-
-                      .form-control-date {
-                        border: none;
-                      }
-                    }
-
-                    .priority {
-                      option {
-                        font-weight: bold;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
 
     .search-by {
@@ -274,7 +262,6 @@ body {
       }
     }
   }
-
   .main-table {
     .table {
       font-size: 0.85rem;

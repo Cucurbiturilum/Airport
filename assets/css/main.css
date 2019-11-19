@@ -80,6 +80,9 @@ body {
 body .btn.focus, body .btn:focus {
   box-shadow: none;
 }
+body header {
+  margin-bottom: 2rem;
+}
 body header .menu .menu-link .fa-bars {
   color: #77CFF7;
   font-size: 2rem;
@@ -90,24 +93,72 @@ body header .menu .dropdown-menu {
 body header .menu .dropdown-menu .dropdown-item.active, body header .menu .dropdown-menu .dropdown-item:active {
   background-color: #C2E7F9;
 }
-body section {
-  margin-top: 1.25rem;
-  margin-bottom: 2.5rem;
+body .modal .modal-content .accordion .card .card-header {
+  background-color: transparent;
 }
-body section .title {
+body .modal .modal-content .accordion .card .card-header h3 .btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0A4B69;
+}
+body .modal .modal-content .accordion .card .collapse .card-header {
+  border: none;
+}
+body .modal .modal-content .accordion .card .collapse .card-header h5 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0A4B69;
+}
+body .modal .modal-content .accordion .card .collapse .card-body i {
+  font-size: 1.9rem;
+}
+body .modal .modal-content .accordion .card .collapse .card-body i.fa-pen-square {
+  color: #fff300;
+}
+body .modal .modal-content .accordion .card .collapse .card-body i.fa-times-circle {
+  color: red;
+}
+body .modal .modal-content .accordion .card .collapse .card-body i.fa-check-circle {
+  color: #00a409;
+}
+body .modal .modal-content .accordion .card .collapse .card-body i.fa-plus-circle {
+  color: #0A4B69;
+}
+body .modal .modal-content .accordion .card .collapse .card-body i.fa-plus-circle:hover {
+  transform: scale(1.2);
+}
+body .modal .modal-content .accordion .card .collapse .card-body .requests .form-control {
+  height: 2.5rem;
+  border-color: #0A4B69;
+}
+body .modal .modal-content .accordion .card .collapse .card-body .requests .employee-name, body .modal .modal-content .accordion .card .collapse .card-body .requests .priority {
+  border: none;
+  height: 1.5rem;
+}
+body .modal .modal-content .accordion .card .collapse .card-body .requests .request-date {
+  height: 1.5rem;
+}
+body .modal .modal-content .accordion .card .collapse .card-body .requests .request-date .form-control-date {
+  border: none;
+}
+body .modal .modal-content .accordion .card .collapse .card-body .requests .priority option {
+  font-weight: bold;
+}
+body .submit {
+  background-color: #77CFF7;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body .title {
   color: #0A4B69;
   font-weight: bold;
   font-size: 2rem;
 }
-body section .fa-plane {
-  color: white;
-  font-size: 1.5rem;
-}
-body section .fa-plane.arrival {
-  transform: rotate(-45deg);
-}
-body section .fa-plane.departure {
-  transform: rotate(135deg);
+body section {
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
 }
 body section .plane-icon {
   width: 12%;
@@ -169,13 +220,6 @@ body section form .add-requests:hover {
   background-color: #0A4B69;
   color: #FFF;
 }
-body section .submit {
-  background-color: #77CFF7;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
 body section .text-secondary {
   color: yellow !important;
 }
@@ -198,57 +242,6 @@ body section .add-new, body section .search-by {
   padding: 1.25rem;
   border: 0.095rem solid #0A4B69;
   border-radius: 0.3rem;
-}
-body section .add-new .modal .modal-content .accordion .card .card-header, body section .search-by .modal .modal-content .accordion .card .card-header {
-  background-color: transparent;
-}
-body section .add-new .modal .modal-content .accordion .card .card-header h3 .btn, body section .search-by .modal .modal-content .accordion .card .card-header h3 .btn {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #0A4B69;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-header, body section .search-by .modal .modal-content .accordion .card .collapse .card-header {
-  border: none;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-header h5, body section .search-by .modal .modal-content .accordion .card .collapse .card-header h5 {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #0A4B69;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body i, body section .search-by .modal .modal-content .accordion .card .collapse .card-body i {
-  font-size: 1.9rem;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body i.fa-pen-square, body section .search-by .modal .modal-content .accordion .card .collapse .card-body i.fa-pen-square {
-  color: #fff300;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body i.fa-times-circle, body section .search-by .modal .modal-content .accordion .card .collapse .card-body i.fa-times-circle {
-  color: red;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body i.fa-check-circle, body section .search-by .modal .modal-content .accordion .card .collapse .card-body i.fa-check-circle {
-  color: #00a409;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body i.fa-plus-circle, body section .search-by .modal .modal-content .accordion .card .collapse .card-body i.fa-plus-circle {
-  color: #0A4B69;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body i.fa-plus-circle:hover, body section .search-by .modal .modal-content .accordion .card .collapse .card-body i.fa-plus-circle:hover {
-  transform: scale(1.2);
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .form-control, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .form-control {
-  height: 2.5rem;
-  border-color: #0A4B69;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .employee-name, body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .priority, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .employee-name, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .priority {
-  border: none;
-  height: 1.5rem;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .request-date, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .request-date {
-  height: 1.5rem;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .request-date .form-control-date, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .request-date .form-control-date {
-  border: none;
-}
-body section .add-new .modal .modal-content .accordion .card .collapse .card-body .requests .priority option, body section .search-by .modal .modal-content .accordion .card .collapse .card-body .requests .priority option {
-  font-weight: bold;
 }
 body section .search-by {
   max-height: 340px;
@@ -326,8 +319,78 @@ body .main-table .table tbody .fa-plane {
   color: #77CFF7;
 }
 
+body .search {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+body .search .input-group {
+  border: 0.09rem solid #77CFF7;
+  border-radius: 0.25rem;
+}
+body .search .input-group .form-control {
+  border: none;
+}
+body .search .input-group .form-control::placeholder {
+  color: #0A4B69;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+body .search .input-group .form-control:focus {
+  box-shadow: none;
+}
+body .search .input-group .input-group-append {
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+body .search .input-group .input-group-append .fa-search {
+  color: #77CFF7;
+  font-size: 1.4rem;
+}
+body .btn-secondary {
+  background-color: #e4e400 !important;
+  border-color: #e4e400;
+}
+body .btn-danger, body .btn-warning, body .btn-secondary {
+  color: white;
+  width: 5rem;
+}
+body .btn-danger.btn-sm, body .btn-warning.btn-sm, body .btn-secondary.btn-sm {
+  line-height: 1.2rem;
+  font-size: 1rem;
+}
+body .btn-danger:focus, body .btn-warning:focus, body .btn-secondary:focus {
+  box-shadow: none;
+}
+body .search-results .table .priority-table {
+  width: 10% !important;
+}
+body .search-results .table .servicerequest-table {
+  width: 20% !important;
+}
+
+section .new-employee .modal .close:focus {
+  outline: none;
+}
+
+.main-table .employee {
+  font-size: 1.2rem !important;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
+}
+body .fa-plane {
+  color: white;
+  font-size: 1.5rem;
+}
+body .fa-plane.arrival {
+  transform: rotate(-45deg);
+}
+body .fa-plane.departure {
+  transform: rotate(135deg);
 }
 
 /*# sourceMappingURL=main.css.map */

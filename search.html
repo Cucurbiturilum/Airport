@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="search w-25">
+    <form >
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Tail number/Date">
+            <div class="input-group-append">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="search-results main-table d-flex">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col" class="aircraftstatus-table">Aircraft Status</th>
+            <th scope="col" class="tailnumber-table">Tail Number</th>
+            <th scope="col" class="servicerequest-table">Service Request</th>
+            <th scope="col" class="priority-table">Priority</th>
+            <th scope="col" class="requestassigned-table">Request Assigned To</th>
+            <th scope="col" class="status-table">Service Request Status</th>
+            <th scope="col" class="chauffeurstatus-table">Chauffeur Status</th>
+            <th scope="col">Date and Time Request Needs to Be Completed By</th>
+            <th scope="col" class="actions-table">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="aircraftstatus-table"><i class="fas fa-plane arrival"></i></td>
+            <td class="tailnumber-table">JN 45678</td>
+            <td class="servicerequest-table">Lorem</td>
+            <td class="priority-table">
+                <button type="button" class="btn btn-secondary btn-sm w-100">
+                    Low
+                </button>
+            </td>
+            <td class="requestassigned-table">Humphrey Bogart</td>
+            <td class="status-table">
+                <button type="button" class="btn btn-light btn-sm w-100">
+                    Unassigned
+                </button>
+            </td>
+            <td class="chauffeurstatus-table">Lorem ipsum</td>
+            <td>11.29.2019 00:34</td>
+            <td class="actions-table">
+                <div class="d-flex">
+                    <button type="button" class="btn" data-toggle="modal" data-target=".bd-modal-lg">
+                        <i class="fas fa-pen-square text-warning"></i>
+                    </button>
+                    <button type="submit" class="btn">
+                        <i class="far fa-check-square text-success"></i>
+                    </button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="aircraftstatus-table"><i class="fas fa-plane arrival"></i></td>
+            <td class="tailnumber-table">JK 45678</td>
+            <td class="servicerequest-table">Lorem</td>
+            <td class="priority-table">
+                <button type="button" class="btn btn-warning btn-sm w-100">
+                    Medium
+                </button>
+            </td>
+            <td class="requestassigned-table">Elvis Presley</td>
+            <td class="status-table">
+                <button type="button" class="btn btn-primary btn-sm w-100">
+                    Assigned
+                </button>
+            </td>
+            <td class="chauffeurstatus-table">Lorem ipsum</td>
+            <td>11.19.2019 13:34</td>
+            <td class="actions-table">
+                <div class="d-flex">
+                    <button type="button" class="btn" data-toggle="modal" data-target=".bd-modal-lg">
+                        <i class="fas fa-pen-square text-warning"></i>
+                    </button>
+                    <button type="submit" class="btn">
+                        <i class="far fa-check-square text-success"></i>
+                    </button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="aircraftstatus-table"><i class="fas fa-plane departure"></i></td>
+            <td class="tailnumber-table">BG 345678</td>
+            <td class="servicerequest-table">Lorem</td>
+            <td class="priority-table">
+                <button type="button" class="btn btn-secondary btn-sm w-100">
+                    Low
+                </button>
+            </td>
+            <td class="requestassigned-table">Ernest Hemingwa</td>
+            <td class="status-table">
+                <button type="button" class="btn btn-primary btn-sm w-100">
+                    Assigned
+                </button>
+            </td>
+            <td class="chauffeurstatus-table">Lorem ipsum</td>
+            <td>11.30.2019 13:34</td>
+            <td class="actions-table">
+                <div class="d-flex">
+                    <button type="button" class="btn" data-toggle="modal" data-target=".bd-modal-lg">
+                        <i class="fas fa-pen-square text-warning"></i>
+                    </button>
+                    <button type="submit" class="btn">
+                        <i class="far fa-check-square text-success"></i>
+                    </button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="aircraftstatus-table"><i class="fas fa-plane arrival"></i></td>
+            <td class="tailnumber-table">ML 45678</td>
+            <td class="servicerequest-table">Lorem</td>
+            <td class="priority-table">
+                <button type="button" class="btn btn-danger btn-sm w-100">
+                    High
+                </button>
+            </td>
+            <td class="requestassigned-table">George Washington</td>
+            <td class="status-table">
+                <button type="button" class="btn btn-success btn-sm w-100">
+                    Completed
+                </button>
+            </td>
+            <td class="chauffeurstatus-table">Lorem ipsum</td>
+            <td>11.21.2019 12:44</td>
+            <td class="actions-table">
+                <div class="d-flex">
+                    <button type="button" class="btn" data-toggle="modal" data-target=".bd-modal-lg">
+                        <i class="fas fa-pen-square text-warning"></i>
+                    </button>
+                    <button type="submit" class="btn">
+                        <i class="far fa-check-square text-success"></i>
+                    </button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="aircraftstatus-table"><i class="fas fa-plane departure"></i></td>
+            <td>RN 45678</td>
+            <td class="servicerequest-table">Lorem</td>
+            <td class="priority-table" w-100>
+                <button type="button" class="btn btn-warning btn-sm w-100">
+                    Medium
+                </button>
+            </td>
+            <td class="requestassigned-table">Henry Ford</td>
+            <td class="status-table">
+                <button type="button" class="btn btn-success btn-sm w-100">
+                    Completed
+                </button>
+            </td>
+            <td class="chauffeurstatus-table">Lorem ipsum</td>
+            <td>11.19.2019 23:34</td>
+            <td class="actions-table">
+                <div class="d-flex">
+                    <button type="button" class="btn" data-toggle="modal" data-target=".bd-modal-lg">
+                        <i class="fas fa-pen-square text-warning"></i>
+                    </button>
+                    <button type="submit" class="btn">
+                        <i class="far fa-check-square text-success"></i>
+                    </button>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="modal fade bd-modal-lg" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="accordion" id="accordionModal">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h3 class="mb-0">
+                            <button class="btn p-0" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                Arrival
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                         data-parent="#accordionModal">
+                        <div class="card-header">
+                            <h5>
+                                Arrival Services Requests
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <form method="post">
+                                <div class="requests">
+                                    <div class="form-group d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <input type="text" class="form-control"
+                                                   placeholder="New Request" readonly>
+                                            <div class="d-flex justify-content-between align-items-end mt-2">
+                                                <div>Abraham Lincoln</div>
+                                                <div>13.11.2019</div>
+                                                <div>15:52</div>
+                                                <button type="button" class="btn btn-danger btn-sm">
+                                                    High
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="fas fa-pen-square"></i>
+                                        </button>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                    </div>
+                                    <div class="form-group d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <input type="text" class="form-control"
+                                                   placeholder="New Request" readonly>
+                                            <div class="d-flex justify-content-between align-items-end mt-2">
+                                                <div>Mark Twain</div>
+                                                <div>06.11.209</div>
+                                                <div>18:52</div>
+                                                <button type="button" class="btn btn-warning btn-sm">
+                                                    Medium
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="fas fa-pen-square"></i>
+                                        </button>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                    </div>
+                                    <div class="form-group d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <input type="text" class="form-control"
+                                                   placeholder="New Request" readonly>
+                                            <div class="d-flex justify-content-between align-items-end mt-2">
+                                                <div>Humphrey Bogart</div>
+                                                <div>24.11.209</div>
+                                                <div>10:02</div>
+                                                <button type="button" class="btn btn-secondary btn-sm">
+                                                    Low
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="fas fa-pen-square"></i>
+                                        </button>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                    </div>
+                                    <div class="form-group d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <input type="text" class="form-control"
+                                                   placeholder="New Request">
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <select name="name" class="employee-name">
+                                                    <option>George Washington</option>
+                                                    <option>Abraham Lincoln</option>
+                                                    <option>Mark Twain</option>
+                                                    <option>Henry Ford</option>
+                                                    <option>Humphrey Bogart</option>
+                                                </select>
+                                                <div class="d-flex request-date">
+                                                    <input type="date" class="form-control-date">
+                                                    <input type="time" class="form-control-date">
+                                                </div>
+                                                <select name="priority" class="priority">
+                                                    <option value="0">Priority</option>
+                                                    <option value="1" class="text-danger">High</option>
+                                                    <option value="2" class="text-warning">Medium
+                                                    </option>
+                                                    <option value="3" class="text-secondary">Low
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="far fa-check-circle"></i>
+                                        </button>
+                                    </div>
+                                    <div class="form-group text-right"><i
+                                            class="fas fa-plus-circle"></i></div>
+                                </div>
+                                <button type="submit"
+                                        class="btn submit text-capitalize d-block ml-auto w-25">
+                                    Save
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h3 class="mb-0">
+                            <button class="btn p-0" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="true"
+                                    aria-controls="collapseTwo">
+                                Departure
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                         data-parent="#accordionModal">
+                        <div class="card-header">
+                            <h5>
+                                Departure Services Requests
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <form method="post">
+                                <div class="requests">
+                                    <div class="form-group d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <input type="text" class="form-control"
+                                                   placeholder="New Request" readonly>
+                                            <div class="d-flex justify-content-between align-items-end mt-2">
+                                                <div>Abraham Lincoln</div>
+                                                <div>05.11.209</div>
+                                                <div>15:52</div>
+                                                <button type="button" class="btn btn-danger btn-sm">
+                                                    High
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="fas fa-pen-square"></i>
+                                        </button>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                    </div>
+                                    <div class="form-group d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <input type="text" class="form-control"
+                                                   placeholder="New Request" readonly>
+                                            <div class="d-flex justify-content-between align-items-end mt-2">
+                                                <div>Mark Twain</div>
+                                                <div>06.11.209</div>
+                                                <div>18:52</div>
+                                                <button type="button" class="btn btn-warning btn-sm">
+                                                    Medium
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="fas fa-pen-square"></i>
+                                        </button>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                    </div>
+                                    <div class="form-group d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <input type="text" class="form-control"
+                                                   placeholder="New Request" readonly>
+                                            <div class="d-flex justify-content-between align-items-end mt-2">
+                                                <div>Humphrey Bogart</div>
+                                                <div>24.11.209</div>
+                                                <div>10:02</div>
+                                                <button type="button" class="btn btn-secondary btn-sm">
+                                                    Low
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="fas fa-pen-square"></i>
+                                        </button>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                    </div>
+                                    <div class="form-group d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <input type="text" class="form-control"
+                                                   placeholder="New Request">
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <select name="name" class="employee-name">
+                                                    <option>George Washington</option>
+                                                    <option>Abraham Lincoln</option>
+                                                    <option>Mark Twain</option>
+                                                    <option>Henry Ford</option>
+                                                    <option>Humphrey Bogart</option>
+                                                </select>
+                                                <div class="d-flex request-date">
+                                                    <input type="date" class="form-control-date">
+                                                    <input type="time" class="form-control-date">
+                                                </div>
+                                                <select name="priority" class="priority">
+                                                    <option value="0">Priority</option>
+                                                    <option value="1" class="text-danger">High</option>
+                                                    <option value="2" class="text-warning">Medium
+                                                    </option>
+                                                    <option value="3" class="text-secondary">Low
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn p-0 ml-3 mt-2">
+                                            <i class="far fa-check-circle"></i>
+                                        </button>
+                                    </div>
+                                    <div class="form-group text-right"><i
+                                            class="fas fa-plus-circle"></i></div>
+                                </div>
+                                <button type="submit"
+                                        class="btn submit text-capitalize d-block ml-auto w-25">
+                                    Save
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

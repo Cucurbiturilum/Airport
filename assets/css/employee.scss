@@ -1,0 +1,17 @@
+section{
+  .new-employee{
+    .modal{
+      .close{
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+  }
+}
+.main-table{
+  .employee{
+    //width: 80%;
+    font-size: 1.2rem!important;
+  }
+}
