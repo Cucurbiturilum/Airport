@@ -1,0 +1,16 @@
+.daily-service{
+h3{
+  margin: 3rem 0;
+  &.title{
+    font-size: 1.7rem;
+  }
+}
+  .collapse-button{
+    .btn{
+      background-color: $air-3-hex;
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+}

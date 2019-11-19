@@ -379,6 +379,19 @@ section .new-employee .modal .close:focus {
   font-size: 1.2rem !important;
 }
 
+.daily-service h3 {
+  margin: 3rem 0;
+}
+.daily-service h3.title {
+  font-size: 1.7rem;
+}
+.daily-service .collapse-button .btn {
+  background-color: #77CFF7;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
