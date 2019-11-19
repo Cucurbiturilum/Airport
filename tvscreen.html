@@ -1,10 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 </head>
 <body>
-
+<section class="main-table container-fluid px-0">
+    <div class="row">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col" class="aircraftstatus-table">Aircraft Status</th>
+                <th scope="col" class="tailnumber-table">Tail Number</th>
+                <th scope="col" class="estimatedtime-table">Estimated Time</th>
+                <th scope="col" class="actualtime-table">Actual Time</th>
+                <th scope="col" class="servicerequest-table">Service Request</th>
+                <th scope="col" class="priority-table">Priority</th>
+                <th scope="col" class="requestassigned-table">Request Assigned To</th>
+                <th scope="col" class="status-table">Service Request Status</th>
+                <th scope="col" class="chauffeurstatus-table">Chauffeur Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="aircraftstatus-table"><i class="fas fa-plane arrival"></i></td>
+                <td class="tailnumber-table">JN 45678</td>
+                <td class="estimatedtime-table">15:55</td>
+                <td class="actualtime-table">00:52</td>
+                <td class="servicerequest-table">Lorem</td>
+                <td class="priority-table">
+                    <button type="button" class="btn btn-secondary btn-sm">
+                        Low
+                    </button>
+                </td>
+                <td class="requestassigned-table">Humphrey Bogart</td>
+                <td class="status-table">
+                    <button type="button" class="btn btn-light btn-sm w-100">
+                        Unassigned
+                    </button>
+                </td>
+                <td class="chauffeurstatus-table">Lorem ipsum</td>
+            </tr>
+            <tr>
+                <td class="aircraftstatus-table"><i class="fas fa-plane arrival"></i></td>
+                <td class="tailnumber-table">JK 45678</td>
+                <td class="estimatedtime-table">18:22</td>
+                <td class="actualtime-table">00:52</td>
+                <td class="servicerequest-table">Lorem</td>
+                <td class="priority-table">
+                    <button type="button" class="btn btn-warning btn-sm">
+                        Medium
+                    </button>
+                </td>
+                <td class="requestassigned-table">Elvis Presley</td>
+                <td class="status-table">
+                    <button type="button" class="btn btn-primary btn-sm w-100">
+                        Assigned
+                    </button>
+                </td>
+                <td class="chauffeurstatus-table">Lorem ipsum</td>
+            </tr>
+            <tr>
+                <td class="aircraftstatus-table"><i class="fas fa-plane departure"></i></td>
+                <td class="tailnumber-table">BG 345678</td>
+                <td class="estimatedtime-table">19:45</td>
+                <td class="actualtime-table">00:52</td>
+                <td class="servicerequest-table">Lorem</td>
+                <td class="priority-table">
+                    <button type="button" class="btn btn-secondary btn-sm">
+                        Low
+                    </button>
+                </td>
+                <td class="requestassigned-table">Ernest Hemingway</td>
+                <td class="status-table">
+                    <button type="button" class="btn btn-primary btn-sm w-100">
+                        Assigned
+                    </button>
+                </td>
+                <td class="chauffeurstatus-table">Lorem ipsum</td>
+            </tr>
+            <tr>
+                <td class="aircraftstatus-table"><i class="fas fa-plane arrival"></i></td>
+                <td class="tailnumber-table">ML 45678</td>
+                <td class="estimatedtime-table">14:33</td>
+                <td class="actualtime-table">00:52</td>
+                <td class="servicerequest-table">Lorem</td>
+                <td class="priority-table">
+                    <button type="button" class="btn btn-danger btn-sm">
+                        High
+                    </button>
+                </td>
+                <td class="requestassigned-table">George Washington</td>
+                <td class="status-table">
+                    <button type="button" class="btn btn-success btn-sm w-100">
+                        Completed
+                    </button>
+                </td>
+                <td class="chauffeurstatus-table">Lorem ipsum</td>
+            </tr>
+            <tr>
+                <td class="aircraftstatus-table"><i class="fas fa-plane departure"></i></td>
+                <td>RN 45678</td>
+                <td class="estimatedtime-table">02:45</td>
+                <td class="actualtime-table">00:52</td>
+                <td class="servicerequest-table">Lorem</td>
+                <td class="priority-table">
+                    <button type="button" class="btn btn-warning btn-sm">
+                        Medium
+                    </button>
+                </td>
+                <td class="requestassigned-table">Henry Ford</td>
+                <td class="status-table">
+                    <button type="button" class="btn btn-success btn-sm w-100">
+                        Completed
+                    </button>
+                </td>
+                <td class="chauffeurstatus-table">Lorem ipsum</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
 </body>
 </html>

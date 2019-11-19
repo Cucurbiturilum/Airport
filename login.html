@@ -53,7 +53,31 @@
                 <label class="form-check-label" for="defaultCheck1">
                     Remember me
                 </label>
-                <a href="#" class="form-check-link text-uppercase">Forgot password</a>
+                <div>
+                    <button type="button" class="btn form-check-link text-uppercase" data-toggle="modal"
+                            data-target="#exampleModal">
+                        Forgot password
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                         aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <h5 class="modal-title title mb-3" id="exampleModalLabel">Forgot password?</h5>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Enter your user account's verified email
+                                                address and we will send you a password reset link.</label>
+                                            <input type="email" class="form-control mb-3" id="exampleInputEmail1"
+                                                   aria-describedby="emailHelp" placeholder="Enter email">
+                                            <button type="submit" class="btn submit w-100">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <button type="button" class="login-btn btn text-uppercase">log in</button>
         </div>
