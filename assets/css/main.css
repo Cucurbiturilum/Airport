@@ -271,7 +271,7 @@ body section .calendar .card .card-body {
   font-weight: bold;
 }
 body .main-table .table {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   border: 1px solid #77CFF7;
 }
 body .main-table .table .aircraftstatus-table, body .main-table .table .estimatedtime-table, body .main-table .table .actualtime-table {
@@ -307,6 +307,9 @@ body .main-table .table tbody td.actions-table i.fa-pen-square {
 }
 body .main-table .table tbody td.actions-table i.fa-trash-alt {
   color: red;
+}
+body .main-table .table tbody .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%;
 }
 body .main-table .table tbody .btn-light, body .main-table .table tbody .btn-primary, body .main-table .table tbody .btn-success {
   width: 100%;

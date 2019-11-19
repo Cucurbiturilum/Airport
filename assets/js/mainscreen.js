@@ -14,4 +14,16 @@ $(document).ready(function (){
         dateTimeContainer.html(date_string)
     }, 1000);
 
+    $('.selectpicker').on('change', function(e){
+        var stylesPerValue = ['btn-light', 'btn-info', 'btn-success'];
+        var newValue = e.target.value;
+        var newDataStyle = stylesPerValue[newValue];
+
+        stylesPerValue.forEach(function(val){
+            $(e.target).siblings('.dropdown-toggle').removeClass(val);
+        });
+
+        $(this).selectpicker('setStyle', newDataStyle);
+    });
+
 });

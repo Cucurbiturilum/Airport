@@ -277,7 +277,7 @@ body {
 
   .main-table {
     .table {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       border: 1px solid $air-3-hex;
 
       .aircraftstatus-table, .estimatedtime-table, .actualtime-table {
@@ -323,7 +323,9 @@ body {
             }
           }
         }
-
+        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+          width: 100%;
+        }
 
         .btn-light, .btn-primary, .btn-success {
           width: 100%;
