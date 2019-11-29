@@ -1,0 +1,35 @@
+.daily-service{
+  h3 {
+    margin: 3rem 0;
+
+    &.title {
+      font-size: 1.7rem;
+    }
+  }
+  .form-group{
+      border: 1px solid $air-3-hex;
+      border-radius: 0.25rem;
+    .form-control{
+      border-top: none;
+      border-bottom: none;
+      border-left: none;
+      border-right: 1px solid $air-3-hex;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+    i{
+      color: $air-3-hex;
+      font-size: 1.5rem;
+    }
+  }
+  .main-table {
+    .table {
+      .timecompleted-table{
+        width: 15%;
+      }
+      .aircraftstatus-table, .estimatedtime-table{
+        width: 9%;
+      }
+    }
+  }
+}

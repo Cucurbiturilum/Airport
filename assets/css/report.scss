@@ -1,16 +1,33 @@
-.daily-service{
-h3{
-  margin: 3rem 0;
-  &.title{
-    font-size: 1.7rem;
+.daily-service {
+  h3 {
+    margin: 3rem 0;
+
+    &.title {
+      font-size: 1.7rem;
+    }
   }
-}
-  .collapse-button{
-    .btn{
+
+  .collapse-button {
+    .btn {
       background-color: $air-3-hex;
       color: #fff;
       font-size: 1.4rem;
       font-weight: 600;
+    }
+  }
+
+  #content-report-per-date, #content-report-per-tail{
+    .card-body {
+      .main-table {
+        .table {
+          .timecompleted-table{
+            width: 15%;
+          }
+          .aircraftstatus-table, .estimatedtime-table{
+            width: 9%;
+          }
+        }
+      }
     }
   }
 }

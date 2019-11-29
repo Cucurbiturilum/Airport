@@ -93,55 +93,73 @@ body header .menu .dropdown-menu {
 body header .menu .dropdown-menu .dropdown-item.active, body header .menu .dropdown-menu .dropdown-item:active {
   background-color: #C2E7F9;
 }
-body .modal .modal-content .accordion .card .card-header {
-  background-color: transparent;
+body .modal .modal-content .accordion {
+  position: relative;
 }
-body .modal .modal-content .accordion .card .card-header h3 .btn {
+body .modal .modal-content .accordion .collapse-button {
+  position: absolute;
+  top: -25px;
+  z-index: 1;
+  width: 70%;
+}
+body .modal .modal-content .accordion .collapse-button .card-button {
+  width: 100%;
+}
+body .modal .modal-content .accordion .collapse-button .card-button .btn {
   font-size: 1.5rem;
   font-weight: bold;
   color: #0A4B69;
+  width: 49%;
+  border: 1px solid #0A4B69;
+  background-color: #fff;
 }
-body .modal .modal-content .accordion .card .collapse .card-header {
+body .modal .modal-content .accordion .collapse-button .card-button .btn.active {
+  background-color: #0A4B69;
+  color: #fff;
+}
+body .modal .modal-content .accordion .card .card-header {
   border: none;
+  margin-top: 3rem;
+  background-color: #fff;
 }
-body .modal .modal-content .accordion .card .collapse .card-header h5 {
+body .modal .modal-content .accordion .card .card-header h5 {
   font-size: 1.1rem;
   font-weight: bold;
   color: #0A4B69;
 }
-body .modal .modal-content .accordion .card .collapse .card-body i {
+body .modal .modal-content .accordion .card .card-body i {
   font-size: 1.9rem;
 }
-body .modal .modal-content .accordion .card .collapse .card-body i.fa-pen-square {
+body .modal .modal-content .accordion .card .card-body i.fa-pen-square {
   color: #ffc107;
 }
-body .modal .modal-content .accordion .card .collapse .card-body i.fa-times-circle {
+body .modal .modal-content .accordion .card .card-body i.fa-times-circle {
   color: red;
 }
-body .modal .modal-content .accordion .card .collapse .card-body i.fa-check-circle {
+body .modal .modal-content .accordion .card .card-body i.fa-check-circle {
   color: #00a409;
 }
-body .modal .modal-content .accordion .card .collapse .card-body i.fa-plus-circle {
+body .modal .modal-content .accordion .card .card-body i.fa-plus-circle {
   color: #0A4B69;
 }
-body .modal .modal-content .accordion .card .collapse .card-body i.fa-plus-circle:hover {
+body .modal .modal-content .accordion .card .card-body i.fa-plus-circle:hover {
   transform: scale(1.2);
 }
-body .modal .modal-content .accordion .card .collapse .card-body .requests .form-control {
+body .modal .modal-content .accordion .card .card-body .requests .form-control {
   height: 2.5rem;
   border-color: #0A4B69;
 }
-body .modal .modal-content .accordion .card .collapse .card-body .requests .employee-name, body .modal .modal-content .accordion .card .collapse .card-body .requests .priority {
+body .modal .modal-content .accordion .card .card-body .requests .employee-name, body .modal .modal-content .accordion .card .card-body .requests .priority {
   border: none;
   height: 1.5rem;
 }
-body .modal .modal-content .accordion .card .collapse .card-body .requests .request-date {
+body .modal .modal-content .accordion .card .card-body .requests .request-date {
   height: 1.5rem;
 }
-body .modal .modal-content .accordion .card .collapse .card-body .requests .request-date .form-control-date {
+body .modal .modal-content .accordion .card .card-body .requests .request-date .form-control-date {
   border: none;
 }
-body .modal .modal-content .accordion .card .collapse .card-body .requests .priority option {
+body .modal .modal-content .accordion .card .card-body .requests .priority option {
   font-weight: bold;
 }
 body .submit {
@@ -390,6 +408,41 @@ section .new-employee .modal .close:focus {
   color: #fff;
   font-size: 1.4rem;
   font-weight: 600;
+}
+.daily-service #content-report-per-date .card-body .main-table .table .timecompleted-table, .daily-service #content-report-per-tail .card-body .main-table .table .timecompleted-table {
+  width: 15%;
+}
+.daily-service #content-report-per-date .card-body .main-table .table .aircraftstatus-table, .daily-service #content-report-per-date .card-body .main-table .table .estimatedtime-table, .daily-service #content-report-per-tail .card-body .main-table .table .aircraftstatus-table, .daily-service #content-report-per-tail .card-body .main-table .table .estimatedtime-table {
+  width: 9%;
+}
+
+.daily-service h3 {
+  margin: 3rem 0;
+}
+.daily-service h3.title {
+  font-size: 1.7rem;
+}
+.daily-service .form-group {
+  border: 1px solid #77CFF7;
+  border-radius: 0.25rem;
+}
+.daily-service .form-group .form-control {
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: 1px solid #77CFF7;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.daily-service .form-group i {
+  color: #77CFF7;
+  font-size: 1.5rem;
+}
+.daily-service .main-table .table .timecompleted-table {
+  width: 15%;
+}
+.daily-service .main-table .table .aircraftstatus-table, .daily-service .main-table .table .estimatedtime-table {
+  width: 9%;
 }
 
 body {

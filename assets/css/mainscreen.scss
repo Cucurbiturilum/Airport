@@ -7,6 +7,7 @@ body {
 
   header {
     margin-bottom: 2rem;
+
     .menu {
       .menu-link {
         .fa-bars {
@@ -24,82 +25,98 @@ body {
       }
     }
   }
+
   .modal {
     .modal-content {
       .accordion {
-        .card {
-          .card-header {
-            background-color: transparent;
+        position: relative;
 
-            h3 {
-              .btn {
-                font-size: 1.5rem;
-                font-weight: bold;
-                color: $air-1-hex;
+        .collapse-button {
+          position: absolute;
+          top: -25px;
+          z-index: 1;
+          width: 70%;
+
+          .card-button {
+            width: 100%;
+
+            .btn {
+              font-size: 1.5rem;
+              font-weight: bold;
+              color: $air-1-hex;
+              width: 49%;
+              border: 1px solid $air-1-hex;
+              background-color: #fff;
+
+              &.active {
+                background-color: $air-1-hex;
+                color: #fff;
               }
             }
           }
+        }
 
-          .collapse {
-            .card-header {
-              border: none;
+        .card {
+          .card-header {
+            border: none;
+            margin-top: 3rem;
+            background-color: #fff;
 
-              h5 {
-                font-size: 1.1rem;
-                font-weight: bold;
-                color: $air-1-hex;
+            h5 {
+              font-size: 1.1rem;
+              font-weight: bold;
+              color: $air-1-hex;
+            }
+          }
+
+          .card-body {
+            i {
+              font-size: 1.9rem;
+
+              &.fa-pen-square {
+                color: #ffc107;
               }
+
+              &.fa-times-circle {
+                color: red;
+              }
+
+              &.fa-check-circle {
+                color: #00a409;
+              }
+
+              &.fa-plus-circle {
+                color: $air-1-hex;
+
+                &:hover {
+                  transform: scale(1.2);
+                }
+              }
+
             }
 
-            .card-body {
-              i {
-                font-size: 1.9rem;
-
-                &.fa-pen-square {
-                  color: #ffc107;
-                }
-
-                &.fa-times-circle {
-                  color: red;
-                }
-
-                &.fa-check-circle {
-                  color: #00a409;
-                }
-
-                &.fa-plus-circle {
-                  color: $air-1-hex;
-
-                  &:hover {
-                    transform: scale(1.2);
-                  }
-                }
-
+            .requests {
+              .form-control {
+                height: 2.5rem;
+                border-color: $air-1-hex;
               }
 
-              .requests {
-                .form-control {
-                  height: 2.5rem;
-                  border-color: $air-1-hex;
-                }
+              .employee-name, .priority {
+                border: none;
+                height: 1.5rem;
+              }
 
-                .employee-name, .priority {
+              .request-date {
+                height: 1.5rem;
+
+                .form-control-date {
                   border: none;
-                  height: 1.5rem;
                 }
+              }
 
-                .request-date {
-                  height: 1.5rem;
-
-                  .form-control-date {
-                    border: none;
-                  }
-                }
-
-                .priority {
-                  option {
-                    font-weight: bold;
-                  }
+              .priority {
+                option {
+                  font-weight: bold;
                 }
               }
             }
@@ -108,6 +125,7 @@ body {
       }
     }
   }
+
   .submit {
     background-color: $air-3-hex;
     color: #fff;
@@ -115,16 +133,16 @@ body {
     font-weight: bold;
     text-transform: uppercase;
   }
+
   .title {
     color: $air-1-hex;
     font-weight: bold;
     font-size: 2rem;
   }
+
   section {
     margin-top: 1.25rem;
     margin-bottom: 2.5rem;
-
-
 
 
     .plane-icon {
@@ -262,6 +280,7 @@ body {
       }
     }
   }
+
   .main-table {
     .table {
       font-size: 0.85rem;
@@ -298,19 +317,23 @@ body {
           padding: 0.4rem;
           vertical-align: middle;
           border-color: $air-3-hex;
+
           &.actions-table {
             i {
               font-size: 1.5rem;
-              &.fa-pen-square{
+
+              &.fa-pen-square {
                 color: #ffc107;
               }
-              &.fa-trash-alt{
+
+              &.fa-trash-alt {
                 color: red;
               }
             }
           }
         }
-        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+
+        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
           width: 100%;
         }
 

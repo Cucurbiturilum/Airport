@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>Reports</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -21,6 +21,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+    <script src="assets/js/report.js"></script>
 </head>
 <body>
 <header>
@@ -45,24 +46,22 @@
     </h3>
     <div class="accordion" id="accordion">
         <div class="collapse-button d-flex">
-            <div class="w-50 text-center mr-1" id="headingOne">
-                <button class="btn w-100" type="button" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne">
+            <div class="w-50 text-center mr-1">
+                <button id="btn-report-per-date" class="btn w-100" type="button">
                     Date
                 </button>
             </div>
-            <div class="w-50 text-center ml-1" id="headingTwo">
-                <button class="btn collapsed w-100" type="button" data-toggle="collapse"
-                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <div class="w-50 text-center ml-1">
+                <button id="btn-report-per-tail-number" class="btn w-100" type="button">
                     Tail Number
                 </button>
             </div>
         </div>
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div id="content-report-per-date">
             <div class="card-body px-0 py-5">
                 <form>
                     <div class="form-group w-25">
-                        <input type="date" class="form-control" aria-describedby="date">
+                        <input type="date" class="form-control">
                     </div>
                 </form>
                 <div class="main-table container-fluid px-0">
@@ -75,189 +74,175 @@
                                 <th scope="col" class="estimatedtime-table">Assigned To</th>
                                 <th scope="col" class="actualtime-table">Time Assigned</th>
                                 <th scope="col" class="priority-table">Priority</th>
-                                <th scope="col">Time to Be Completed By</th>
-
-                                <th scope="col" class="requestassigned-table">Request Assigned To</th>
-                                <th scope="col" class="status-table">Service Request Status</th>
-                                <th scope="col" class="chauffeurstatus-table">Chauffeur Status</th>
-
-                                <th scope="col" class="actions-table">Actions</th>
+                                <th scope="col" class="timecompleted-table">Time to Be Completed By</th>
+                                <th scope="col" class="timecompleted-table">Time Actually Completed By</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td class="aircraftstatus-table"><i class="fas fa-plane arrival"></i></td>
                                 <td class="tailnumber-table">JN 45678</td>
-                                <td class="estimatedtime-table">15:55</td>
-                                <td class="actualtime-table">00:52</td>
                                 <td class="servicerequest-table">Lorem</td>
+                                <td class="requestassigned-table">Humphrey Bogart</td>
+                                <td class="requestassigned-table">Humphrey Bogart</td>
+                                <td class="estimatedtime-table">15:55</td>
                                 <td class="priority-table">
                                     <button type="button" class="btn btn-secondary btn-sm">
                                         Low
                                     </button>
                                 </td>
-                                <td class="requestassigned-table">Humphrey Bogart</td>
-                                <td class="status-table">
-                                    <select class="selectpicker" data-style="btn-light">
-                                        <option value="0">Unassigned</option>
-                                        <option value="1">Assigned</option>
-                                        <option value="2">Complete</option>
-                                    </select>
-                                </td>
-                                <td class="chauffeurstatus-table">Lorem ipsum</td>
-                                <td>11.29.2019 00:34</td>
-                                <td class="actions-table">
-                                    <div class="d-flex">
-                                        <button type="button" class="btn" data-toggle="modal" data-target=".bd-modal-lg">
-                                            <i class="fas fa-pen-square"></i>
-                                        </button>
-                                        <button type="button" class="btn">
-                                            <i class="far fa-trash-alt"></i>
-                                        </button>
-                                    </div>
-                                </td>
+                                <td class="actualtime-table">13:52</td>
+                                <td class="actualtime-table">12:24</td>
                             </tr>
                             <tr>
-                                <td class="aircraftstatus-table"><i class="fas fa-plane arrival"></i></td>
                                 <td class="tailnumber-table">JK 45678</td>
-                                <td class="estimatedtime-table">18:22</td>
-                                <td class="actualtime-table">00:52</td>
                                 <td class="servicerequest-table">Lorem</td>
+                                <td class="requestassigned-table">Elvis Presley</td>
+                                <td class="requestassigned-table">Elvis Presley</td>
+                                <td class="estimatedtime-table">18:22</td>
                                 <td class="priority-table">
                                     <button type="button" class="btn btn-warning btn-sm">
                                         Medium
                                     </button>
                                 </td>
-                                <td class="requestassigned-table">Elvis Presley</td>
-                                <td class="status-table">
-                                    <select class="selectpicker" data-style="btn-light">
-                                        <option value="0">Unassigned</option>
-                                        <option value="1">Assigned</option>
-                                        <option value="2">Complete</option>
-                                    </select>
-                                </td>
-                                <td class="chauffeurstatus-table">Lorem ipsum</td>
-                                <td>11.19.2019 13:34</td>
-                                <td class="actions-table">
-                                    <div class="d-flex">
-                                        <button type="button" class="btn" data-toggle="modal" data-target=".bd-modal-lg">
-                                            <i class="fas fa-pen-square"></i>
-                                        </button>
-                                        <button type="button" class="btn">
-                                            <i class="far fa-trash-alt"></i>
-                                        </button>
-                                    </div>
-                                </td>
+                                <td class="actualtime-table">00:52</td>
+                                <td class="actualtime-table">23:52</td>
                             </tr>
                             <tr>
-                                <td class="aircraftstatus-table"><i class="fas fa-plane departure"></i></td>
                                 <td class="tailnumber-table">BG 345678</td>
-                                <td class="estimatedtime-table">19:45</td>
-                                <td class="actualtime-table">00:52</td>
                                 <td class="servicerequest-table">Lorem</td>
+                                <td class="requestassigned-table">Ernest Hemingway</td>
+                                <td class="requestassigned-table">Ernest Hemingway</td>
+                                <td class="estimatedtime-table">19:45</td>
                                 <td class="priority-table">
                                     <button type="button" class="btn btn-secondary btn-sm">
                                         Low
                                     </button>
                                 </td>
-                                <td class="requestassigned-table">Ernest Hemingway</td>
-                                <td class="status-table">
-                                    <select class="selectpicker" data-style="btn-light">
-                                        <option value="0">Unassigned</option>
-                                        <option value="1">Assigned</option>
-                                        <option value="2">Complete</option>
-                                    </select>
-                                </td>
-                                <td class="chauffeurstatus-table">Lorem ipsum</td>
-                                <td>11.30.2019 13:34</td>
-                                <td class="actions-table">
-                                    <div class="d-flex">
-                                        <button type="button" class="btn" data-toggle="modal" data-target=".bd-modal-lg">
-                                            <i class="fas fa-pen-square"></i>
-                                        </button>
-                                        <button type="button" class="btn">
-                                            <i class="far fa-trash-alt"></i>
-                                        </button>
-                                    </div>
-                                </td>
+                                <td class="actualtime-table">00:52</td>
+                                <td class="actualtime-table">21:32</td>
                             </tr>
                             <tr>
-                                <td class="aircraftstatus-table"><i class="fas fa-plane arrival"></i></td>
                                 <td class="tailnumber-table">ML 45678</td>
-                                <td class="estimatedtime-table">14:33</td>
-                                <td class="actualtime-table">00:52</td>
                                 <td class="servicerequest-table">Lorem</td>
+                                <td class="requestassigned-table">George Washington</td>
+                                <td class="requestassigned-table">George Washington</td>
+                                <td class="estimatedtime-table">14:33</td>
                                 <td class="priority-table">
                                     <button type="button" class="btn btn-danger btn-sm">
                                         High
                                     </button>
                                 </td>
-                                <td class="requestassigned-table">George Washington</td>
-                                <td class="status-table">
-                                    <select class="selectpicker" data-style="btn-light">
-                                        <option value="0">Unassigned</option>
-                                        <option value="1">Assigned</option>
-                                        <option value="2">Complete</option>
-                                    </select>
-                                </td>
-                                <td class="chauffeurstatus-table">Lorem ipsum</td>
-                                <td>11.21.2019 12:44</td>
-                                <td class="actions-table">
-                                    <div class="d-flex">
-                                        <button type="button" class="btn" data-toggle="modal" data-target=".bd-modal-lg">
-                                            <i class="fas fa-pen-square"></i>
-                                        </button>
-                                        <button type="button" class="btn">
-                                            <i class="far fa-trash-alt"></i>
-                                        </button>
-                                    </div>
-                                </td>
+                                <td class="actualtime-table">16:02</td>
+                                <td class="actualtime-table">15:55</td>
                             </tr>
                             <tr>
-                                <td class="aircraftstatus-table"><i class="fas fa-plane departure"></i></td>
-                                <td>RN 45678</td>
-                                <td class="estimatedtime-table">02:45</td>
-                                <td class="actualtime-table">00:52</td>
+                                <td class="tailnumber-table">RN 45678</td>
                                 <td class="servicerequest-table">Lorem</td>
+                                <td class="requestassigned-table">Henry Ford</td>
+                                <td class="requestassigned-table">Henry Ford</td>
+                                <td class="estimatedtime-table">02:45</td>
                                 <td class="priority-table">
                                     <button type="button" class="btn btn-warning btn-sm">
                                         Medium
                                     </button>
                                 </td>
-                                <td class="requestassigned-table">Henry Ford</td>
-                                <td class="status-table">
-                                    <select class="selectpicker" data-style="btn-light">
-                                        <option value="0">Unassigned</option>
-                                        <option value="1">Assigned</option>
-                                        <option value="2">Complete</option>
-                                    </select>
-                                </td>
-                                <td class="chauffeurstatus-table">Lorem ipsum</td>
-                                <td>11.19.2019 23:34</td>
-                                <td class="actions-table">
-                                    <div class="d-flex">
-                                        <button type="button" class="btn" data-toggle="modal" data-target=".bd-modal-lg">
-                                            <i class="fas fa-pen-square"></i>
-                                        </button>
-                                        <button type="button" class="btn">
-                                            <i class="far fa-trash-alt"></i>
-                                        </button>
-                                    </div>
-                                </td>
+                                <td class="actualtime-table">06:27</td>
+                                <td class="actualtime-table">05:33</td>
                             </tr>
                             </tbody>
                         </table>
-                </div>>
+                </div>
             </div>
         </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        <div id="content-report-per-tail">
+            <div class="card-body px-0 py-5">
+                <form>
+                    <div class="form-group w-25">
+                        <input type="text" class="form-control" placeholder="Tail Number">
+                    </div>
+                </form>
+                <div class="main-table container-fluid px-0">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col" class="servicerequest-table">Service Request</th>
+                            <th scope="col" class="aircraftstatus-table">Assigned By</th>
+                            <th scope="col" class="estimatedtime-table">Assigned To</th>
+                            <th scope="col" class="actualtime-table">Time Assigned</th>
+                            <th scope="col" class="priority-table">Priority</th>
+                            <th scope="col" class="timecompleted-table">Time to Be Completed By</th>
+                            <th scope="col" class="timecompleted-table">Time Actually Completed By</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="servicerequest-table">Lorem</td>
+                            <td class="requestassigned-table">Humphrey Bogart</td>
+                            <td class="requestassigned-table">Humphrey Bogart</td>
+                            <td class="estimatedtime-table">15:55</td>
+                            <td class="priority-table">
+                                <button type="button" class="btn btn-secondary btn-sm">
+                                    Low
+                                </button>
+                            </td>
+                            <td class="actualtime-table">13:52</td>
+                            <td class="actualtime-table">12:24</td>
+                        </tr>
+                        <tr>
+                            <td class="servicerequest-table">Lorem</td>
+                            <td class="requestassigned-table">Elvis Presley</td>
+                            <td class="requestassigned-table">Elvis Presley</td>
+                            <td class="estimatedtime-table">18:22</td>
+                            <td class="priority-table">
+                                <button type="button" class="btn btn-warning btn-sm">
+                                    Medium
+                                </button>
+                            </td>
+                            <td class="actualtime-table">00:52</td>
+                            <td class="actualtime-table">23:52</td>
+                        </tr>
+                        <tr>
+                            <td class="servicerequest-table">Lorem</td>
+                            <td class="requestassigned-table">Ernest Hemingway</td>
+                            <td class="requestassigned-table">Ernest Hemingway</td>
+                            <td class="estimatedtime-table">19:45</td>
+                            <td class="priority-table">
+                                <button type="button" class="btn btn-secondary btn-sm">
+                                    Low
+                                </button>
+                            </td>
+                            <td class="actualtime-table">00:52</td>
+                            <td class="actualtime-table">21:32</td>
+                        </tr>
+                        <tr>
+                            <td class="servicerequest-table">Lorem</td>
+                            <td class="requestassigned-table">George Washington</td>
+                            <td class="requestassigned-table">George Washington</td>
+                            <td class="estimatedtime-table">14:33</td>
+                            <td class="priority-table">
+                                <button type="button" class="btn btn-danger btn-sm">
+                                    High
+                                </button>
+                            </td>
+                            <td class="actualtime-table">16:02</td>
+                            <td class="actualtime-table">15:55</td>
+                        </tr>
+                        <tr>
+                            <td class="servicerequest-table">Lorem</td>
+                            <td class="requestassigned-table">Henry Ford</td>
+                            <td class="requestassigned-table">Henry Ford</td>
+                            <td class="estimatedtime-table">02:45</td>
+                            <td class="priority-table">
+                                <button type="button" class="btn btn-warning btn-sm">
+                                    Medium
+                                </button>
+                            </td>
+                            <td class="actualtime-table">06:27</td>
+                            <td class="actualtime-table">05:33</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
