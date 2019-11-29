@@ -175,6 +175,20 @@ body {
       .form-group {
         margin-bottom: 1.25rem;
 
+        .date {
+          width: 55%;
+          .datepicker-input{
+            width: 80%;
+          }
+          .calendar-icon{
+            width: 10%;
+            font-size: 1.5rem;
+          }
+        }
+        .time{
+          width: 30%;
+        }
+
         .form-control {
           height: 3rem;
           font-size: 1.2rem;

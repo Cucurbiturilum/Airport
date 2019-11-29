@@ -202,6 +202,19 @@ body section form label {
 body section form .form-group {
   margin-bottom: 1.25rem;
 }
+body section form .form-group .date {
+  width: 55%;
+}
+body section form .form-group .date .datepicker-input {
+  width: 80%;
+}
+body section form .form-group .date .calendar-icon {
+  width: 10%;
+  font-size: 1.5rem;
+}
+body section form .form-group .time {
+  width: 30%;
+}
 body section form .form-group .form-control {
   height: 3rem;
   font-size: 1.2rem;
