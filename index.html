@@ -586,8 +586,76 @@
         </table>
     </div>
 </section>
-<footer class="d-flex justify-content-between">
+<footer class="d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+        <img src="assets/images/logo2.png" alt="logo"/>
+        <div class="d-inline-block ml-5">
+            <div class="mb-3">
+                <span class="icon d-inline-block"><i class="far fa-envelope"></i></span>
+                <a href="mailto: support@Infotechnologysolutions.com" class="mailto" target="_blank">support@Infotechnologysolutions.com</a>
+            </div>
+            <div>
+                <span class="icon d-inline-block"><i class="fas fa-map-marker-alt"></i></span>
+                <a href="https://goo.gl/maps/jmCthR83Cqe6hsWx5" class="address" target="_blank">
+                    1177 Avenue of the Americas New York, NY 10036
+                </a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn contact-support" data-toggle="modal" data-target="#exampleModal">
+            Contact Support
+        </button>
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header ">
+                        <h5 class="modal-title font-weight-bolder" id="exampleModalLabel">Submit a request</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="submitted-by">Submitted by</label>
+                                <input type="text" class="form-control" id="submitted-by">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Description<span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="description" rows="3"></textarea>
+                                <small class="form-text text-muted">Please enter the details of
+                                    your request. A member of our support staff will respond as soon as possible.
+                                </small>
+                            </div>
+                            <div class="form-group">
+                                <label for="priority">Priority<span class="text-danger">*</span></label>
+                                <select class="form-control" id="priority">
+                                    <option>High</option>
+                                    <option>Medium</option>
+                                    <option>Low</option>
+                                </select>
+                                <small class="form-text text-muted">Request priority</small>
+                            </div>
+                            <div class="form-group upload">
+                                <button class="btn w-100"><i class="fas fa-paperclip"></i> Add file</button>
+                                <input type="file"/>
+                            </div>
+                            <button type="submit" class="submit btn w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
