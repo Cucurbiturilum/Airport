@@ -363,6 +363,9 @@ body .main-table .table tbody .btn-light {
 body .main-table .table tbody .fa-plane {
   color: #77CFF7;
 }
+body footer {
+  background-color: #77CFF7;
+}
 
 body .search {
   margin-top: 5rem;
