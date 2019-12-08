@@ -318,7 +318,7 @@ body .main-table .table .aircraftstatus-table, body .main-table .table .estimate
 body .main-table .table .priority-table, body .main-table .table .actions-table {
   width: 5%;
 }
-body .main-table .table .tailnumber-table, body .main-table .table .chauffeurstatus-table, body .main-table .table .status-table {
+body .main-table .table .tailnumber-table, body .main-table .table .chauffeurstatus-table, body .main-table .table .status-table, body .main-table .table .current-status {
   width: 8%;
 }
 body .main-table .table .servicerequest-table, body .main-table .table .requestassigned-table {
