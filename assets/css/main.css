@@ -319,10 +319,10 @@ body .main-table .table .priority-table, body .main-table .table .actions-table 
   width: 5%;
 }
 body .main-table .table .tailnumber-table, body .main-table .table .chauffeurstatus-table, body .main-table .table .status-table {
-  width: 9%;
+  width: 8%;
 }
 body .main-table .table .servicerequest-table, body .main-table .table .requestassigned-table {
-  width: 15%;
+  width: 12%;
 }
 body .main-table .table thead {
   background-color: #77CFF7;
